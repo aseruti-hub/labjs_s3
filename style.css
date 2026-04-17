@@ -1,0 +1,23 @@
+.ljs-screen {
+  white-space: normal !important;
+}
+
+.ljs-screen * {
+  white-space: normal !important;
+}
+
+.text 
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.text-container {
+  max-width: 600px;   /* ajusta conforme quiseres */
+  margin: 0 auto;     /* centra no ecrã */
+}
+
+.text-container {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
