@@ -538,15 +538,24 @@ setTimeout(() => {
           }
         },
         {
-          "type": "lab.html.Form",
-          "content": "\u003Cdiv class=\"page\"\u003E\n  \u003Cdiv class=\"content\"\u003E\n    \u003Ch2\u003EQuão confiante está na resposta que acabou de fornecer?\u003C\u002Fh2\u003E\n\n    \u003Cdiv class=\"scale-wrapper\"\u003E\n\n      \u003C!-- Labels acima --\u003E\n      \u003Cdiv class=\"top-labels\"\u003E\n        \u003Cspan\u003ENada confiante\u003C\u002Fspan\u003E\n        \u003Cspan\u003E\u003C\u002Fspan\u003E\n        \u003Cspan\u003E\u003C\u002Fspan\u003E\n        \u003Cspan\u003E\u003C\u002Fspan\u003E\n        \u003Cspan\u003E\u003C\u002Fspan\u003E\n        \u003Cspan\u003ETotalmente confiante\u003C\u002Fspan\u003E\n      \u003C\u002Fdiv\u003E\n\n      \u003C!-- Escala --\u003E\n     \u003Cform id =\"confid\"\u003E\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"1\"\u003E 1\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"2\"\u003E 2\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"3\"\u003E 3\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"4\"\u003E 4\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"5\"\u003E 5\n\u003Cinput type=\"ratio\" name=\"conf\" value=\"6\"\u003E 6\n     \u003C\u002Fform\u003E\n\n      \u003C!-- Avançar --\u003E\n\u003Cfooter\u003E\n  \u003Cbutton type = \"submit\" form = \"conf\"\u003E\n    Continuar\n  \u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E\n\n    \u003C\u002Fdiv\u003E\n  \u003C\u002Fdiv\u003E\n\u003C\u002Fdiv\u003E\n\n\u003Cstyle\u003E\n.page {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.content {\n  width: 100%;\n  max-width: 900px;\n  text-align: center;\n}\n\nh2 {\n  margin-bottom: 50px;\n  font-size: 26px;\n}\n\n\u002F* WRAPPER *\u002F\n.scale-wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 10px;\n}\n\n\u002F* LABELS ACIMA *\u002F\n.top-labels {\n  display: grid;\n  grid-template-columns: repeat(6, 65px);\n  gap: 12px;\n  justify-content: center;\n  font-size: 18px;\n  color: #555;\n}\n\n.top-labels span {\n  text-align: center;\n}\n\n\u002F* ESCALA *\u002F\n.scale {\n  display: flex;\n  gap: 12px;\n}\n\n.scale label {\n  cursor: pointer;\n}\n\n.scale span {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  width: 65px;\n  height: 65px;\n\n  border-radius: 10px;\n  background: #eef2f7;\n  font-size: 22px;\n  font-weight: 500;\n  transition: all 0.2s ease;\n}\n\n.scale span:hover {\n  background: #dce3ec;\n  transform: translateY(-2px);\n}\n\n.scale input {\n  display: none;\n}\n\n.scale input:checked + span {\n  background: #2c7be5;\n  color: white;\n  font-weight: bold;\n  transform: scale(1.08);\n}\n\u003C\u002Fstyle\u003E",
-          "scrollTop": true,
+          "type": "lab.canvas.Screen",
+          "content": [],
+          "viewport": [
+            800,
+            600
+          ],
           "files": {},
-          "responses": {},
+          "responses": {
+            "": ""
+          },
           "parameters": {},
-          "messageHandlers": {},
-          "title": "Form",
-          "skip": true
+          "messageHandlers": {
+            "run": function anonymous(
+) {
+window.parent.postMessage("labjs_finished", "*");
+}
+          },
+          "title": "End"
         }
       ]
     }
