@@ -550,14 +550,17 @@ setTimeout(() => {
           },
           "parameters": {},
           "messageHandlers": {
-            "run": function anonymous(
+            "end": function anonymous(
 ) {
+const results = lab.data.json();
+
 window.parent.postMessage({
   type: "labjs_data",
   status: "finished",
   id: participant_id,
-  results: results
+  labjs_results: results
 }, "*");
+
 }
           },
           "title": "End"
